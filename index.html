@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta property="og:image" content="static/images/pipeline.png" />
+  <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+  <meta property="og:title" content="From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach" />
+
+  <meta name="keywords" content="3D Parametric Model, 2D CAD Drawings, Vision-Language Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2KQ66G50M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-S2KQ66G50M');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/manycore-research">
+      <span class="icon">
+        <i class="fab fa-github"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://manycore-research.github.io/faceformer">
+            faceformer
+          </a>
+          <a class="navbar-item" href="https://manycore-research.github.io/cstr">
+            cstr
+          </a>
+          <a class="navbar-item" href="https://manycore-research.github.io/PlankAssembly">
+            PlankAssembly
+          </a>
+          <a class="navbar-item" href="https://manycore-research.github.io/CAD2Program">
+            CAD2Program
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Xilin Wang<sup>1*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://bertjiazheng.github.io">Jia Zheng</a><sup>2*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                Yuanchao Hu<sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                Hao Zhu<sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://yuqian1023.github.io">Qian Yu</a><sup>1†</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://zihan-z.github.io">Zihan Zhou</a><sup>2†</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Beihang University</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block"><sup>2</sup><a href="https://kujiale.com">Manycore Tech Inc.</a></span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">*Equal contribution</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">*Corresponding authors</span>
+            </div>
+
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2412.xxxxx" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <!-- Teaser. -->
+      <div class="hero-body">
+        <img class="input-img" src="static/images/teaser.gif">
+        <h2 class="subtitle has-text-centered">
+          <span c lass="dnerf">CAD2Program</span> is a Vision-Language Model for reconstructing 3D parametric models from 2D CAD drawings.
+        </h2>
+      </div>
+      <!--/ Teaser. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In this paper, we present <span c lass="dnerf">CAD2Program</span>, a new method for reconstructing 3D parametric models from 2D CAD drawings. Our proposed method is inspired by recent successes in vision-language models (VLMs), and departs from traditional methods which rely on task-specific data representations and/or algorithms. Specifically, on the input side, we simply treat the 2D CAD drawing as a raster image, regardless of its original format, and encode the image with a standard ViT model. We show that such an encoding scheme achieves competitive performance against existing methods that operate on vector-graphics inputs, while imposing substantially fewer restrictions on the 2D drawings. On the output side, our method auto-regressively predicts a general-purpose language describing 3D parametric models in text form. Compared to other sequence modeling methods for CAD which use domain-specific sequence representations with fixed-size slots, our text-based representation is more flexible, and can be easily extended to arbitrary geometric entities and semantic or functional properties. Experimental results on a large-scale dataset of cabinet models demonstrate the effectiveness of our method.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- 2D CAD Drawing. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">2D CAD Drawings</h2>
+          <img src="static/images/drawings.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              An engineering drawing is mixture of two types of layers:
+              <ul>
+                <li><em>geometry layer</em>, which is the actual object described by its orthographic projections,</li>
+                <li><em>annotation layer</em>, which includes dimensioning and function symbols, such as surface types, manufacturing instructions, <em>etc.</em></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ 2D CAD Drawing. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- 3D Parametric Models. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">3D Parametric Models</h2>
+          <img src="static/images/parameters.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              In this paper, a 3D cabinet is built by assembling pre-defined primitive models. Each primitive instance is defined by a computer program, which consists of three parts:
+              <ul>
+                <li><em>model ID</em>, which is a unique identifier of a primitive in the database,</li>
+                <li><em>common parameters</em>, which indicate the general pose and size of the primitive in the 3D space,</li>
+                <li><em>model-specific parameters</em>, which describe possible variations of a specific primitive.</li>
+              </ul>
+            </p>
+            <p>
+              We represent 3D parametric models as scripts of a general-purpose language (<em>e.g.</em>, Python). The shape program of the above cabinet is shown as follows:
+            </p>
+            <pre style="font-size: 12px"><code>bbox_0 = Bbox(507, 185, 805, 1014, 370, 50, 0)
+model_0 = &lt;model_57761062&gt;()
+bbox_1 = Bbox(25, 185, 390, 50, 370, 780, 0)
+model_1 = &lt;model_57758898&gt;()
+bbox_2 = Bbox(532, 195, 390, 964, 350, 780, 0)
+model_2 = &lt;model_115813862&gt;(N=1, NKA=928, DBXX=1, BT=18)
+bbox_3 = Bbox(532, 185, 390, 928, 330, 18, 0)
+model_3 = &lt;model_57253481&gt;()
+bbox_4 = Bbox(291, 11, 390, 478, 18, 776, 0)
+model_4 = &lt;model_82289390&gt;(openDirection=0, uCove=18, dCover=18, lCover=18, rCover=18)
+bbox_5 = Bbox(773, 11, 390, 478, 18, 776, 0)
+model_5 = &lt;model_82289390&gt;(openDirection=1, uCover=18, dCover=18, lCover=18, rCover=18)
+</code></pre>
+            <p>
+              The above script defines a cabinet with six primitive models. Each two lines corresponds to a primitive model. The odd line defined the bounding box of the primitive and then the even line defined the model ID and associated parameters.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ 3D Parametric Models. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Model. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">CAD2Program Model</h2>
+          <div class="content has-text-justified">
+            <p>
+              We adopt an off-the-shelf Vision-Language Model (such as InternVL). The <span c lass="dnerf">CAD2Program</span> takes 2D engineering drawing as input and outputs a text-form of shape program,  which depicts the 3D parametric model. The pipeline of our method is shown as follows.
+            </p>
+          </div>
+          <img src="static/images/internvl.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              We show a conversation example of prompt and response in Python format in the following.
+            </p>
+          </div>
+          <img src="static/images/conversation.png" width="80%">
+        </div>
+      </div>
+      <!--/ Model. -->
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{CAD2Program,
+  author    = {Wang, Xilin, Zheng, Jia and Hu, Yuanchao and Zhu, Hao and Yu, Qian and Zhou, Zihan},
+  title     = {From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach},
+  booktitle = {AAAI},
+  year      = {2025}
+}</code></pre>
+    </div>
+  </section>
+
+  <section class="section" id="Acknowledgements">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgements</h2>
+        This work was done during Xilin Wang's internship at <a href="https://kujiale.com">Manycore Tech Inc.</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/pdf/2412.xxxxx">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
